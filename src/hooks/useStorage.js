@@ -23,20 +23,20 @@ const useStorage = (key, initialValues) => {
             } catch (error) {
                 setIsError(true)
             }
-        }, 5000);
-    })
+        }, 3000);
+    }, [key, initialValues])
 
     const saveData = (data) => {
-        localStorage.setItem(key, JSON.stringify(data))
+        localStorage.setItem(key, JSON.stringify(data));
         setData(data);
+    };
 
-        return {
-            data,
-            isLoading,
-            isError,
-            saveData
-        }
-    }
-}
+    return {
+        data,
+        isLoading,
+        isError,
+        saveData,
+    };
+};
 
 export default useStorage;
