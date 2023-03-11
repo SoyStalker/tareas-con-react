@@ -27,4 +27,6 @@ export const TodoCardButton = styled.button`
     transition: background-color 0.25s;
 `;
 
-export const TodoCardText = styled.div``;
+export const TodoCardText = styled.div`
+    font-family: Arial, Helvetica, sans-serif;
+`;
