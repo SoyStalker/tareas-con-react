@@ -35,12 +35,32 @@ export const TodoModalBody = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 export const TodoTextArea = styled.textarea`
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 120px;
+    min-height: 30px;
     display: flex;
     flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    padding-top: 5px;
 `;
 
-export const TodoBottonCreate = styled.button``;
+export const TodoBottonCreate = styled.button`
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 20px;
+    width: 50%;
+    height: 40px;
+    transition: all .5s;
+
+    &:hover{
+        color:red;
+        width: 30%;
+    }
+`;
